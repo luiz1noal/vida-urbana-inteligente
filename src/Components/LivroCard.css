@@ -1,0 +1,78 @@
+.card-livros {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-busca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-busca input {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.form-busca button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    width: 120px;
+}
+
+.form-busca button:hover {
+    background-color: #45a049;
+}
+
+.livros-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.livro {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.livro:hover {
+    transform: scale(1.05);
+}
+
+.livro img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.livro h3 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+.livro p {
+    font-size: 0.9rem;
+    color: #555;
+}
