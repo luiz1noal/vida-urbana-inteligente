@@ -12,7 +12,6 @@ export const AdicionarLivros = () => {
             .then(res => setLivros(res.data))
             .catch(err => console.error(err));
     }, []);
-
     const adicionarLivro = (e) => {
         e.preventDefault();
 
@@ -26,6 +25,11 @@ export const AdicionarLivros = () => {
             })
             .catch(err => console.error(err));
     };
+    const removerLivro = (indexRemoveLivro) => {
+        const novaLista = livros.filter((_, index) => index !== indexRemoveLivro);
+        setLivros(novaLista);
+    };
+
 
     return (
         <div className="adicionar-livros">
@@ -53,8 +57,10 @@ export const AdicionarLivros = () => {
                 {livros.map((livro, index) => (
                     <li key={index}>
                         <strong>{livro.titulo}</strong> — {livro.autor}
+                        <button className="remove-livro" onClick={() => removerLivro(index)}>Remover</button>
                     </li>
                 ))}
+
             </ul>
         </div>
     );
