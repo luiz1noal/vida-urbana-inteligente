@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "atv-14-05-2025-vida-urbana-inteligente",
+			"path": "../.."
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../node_modules"
+		}
+	],
+	"settings": {}
+}
